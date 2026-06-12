@@ -1,112 +1,93 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Świat Mileny</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Komiks Mileny</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7ff;
-      color: #222;
-      text-align: center;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1220;
+    color: white;
+  }
 
-    header {
-      background: linear-gradient(90deg, #ffde59, #ff7bd1);
-      padding: 25px;
-      color: black;
-    }
+  .scene {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 
-    h1 {
-      margin: 0;
-      font-size: 32px;
-    }
+  .panel {
+    background: #1c2140;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
 
-    p {
-      margin: 5px 0 0;
-      font-size: 14px;
-    }
+  .emoji {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
 
-    section {
-      padding: 20px;
-    }
+  h2 {
+    margin: 10px 0;
+    font-size: 22px;
+  }
 
-    .card {
-      background: white;
-      margin: 15px auto;
-      padding: 15px;
-      border-radius: 12px;
-      max-width: 500px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+  p {
+    font-size: 16px;
+    opacity: 0.9;
+  }
 
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 10px;
-    }
-
-    .tag {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 5px 10px;
-      background: #eee;
-      border-radius: 20px;
-      font-size: 12px;
-    }
-
-    footer {
-      padding: 20px;
-      font-size: 12px;
-      opacity: 0.6;
-    }
-  </style>
+  .hint {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>🎨 Świat Mileny</h1>
-  <p>kolory • zwierzęta • wyobraźnia • muzyka</p>
-</header>
-
-<section>
-
-  <div class="card">
-    <h2>🖼️ Mój rysunek</h2>
-    <img src="assets/rysunki/rysunek1.jpg" alt="rysunek Mileny">
-    <div class="tag">to jest mój kot co lata</div>
+<!-- KLATKA 1 -->
+<div class="scene" style="background: linear-gradient(180deg,#ffcc00,#ff6b6b);">
+  <div class="panel">
+    <div class="emoji">🐱</div>
+    <h2>Znikający kot</h2>
+    <p>Milena rysuje kota… ale kot nagle ucieka z kartki!</p>
   </div>
+</div>
 
-  <div class="card">
-    <h2>🎧 Moja piosenka</h2>
-    <audio controls>
-      <source src="assets/audio/utwor1.mp3" type="audio/mpeg">
-    </audio>
-    <div class="tag">to mnie rozśmiesza</div>
+<!-- KLATKA 2 -->
+<div class="scene" style="background: linear-gradient(180deg,#4facfe,#00f2fe);">
+  <div class="panel">
+    <div class="emoji">⚡</div>
+    <h2>Pikachu interweniuje</h2>
+    <p>Pikachu mówi: „spokojnie, ja go złapię w kolor!”</p>
   </div>
+</div>
 
-  <div class="card">
-    <h2>📖 Historia</h2>
-    <p>
-      Tu są moje kolory i zwierzęta.  
-      Pikachu czasem mi pomaga rysować świat.
-    </p>
-    <div class="tag">moja opowieść</div>
+<!-- KLATKA 3 -->
+<div class="scene" style="background: linear-gradient(180deg,#a18cd1,#fbc2eb);">
+  <div class="panel">
+    <div class="emoji">🎨</div>
+    <h2>Nowy świat</h2>
+    <p>Kot wraca… ale już w kolorowym świecie Mileny.</p>
   </div>
+</div>
 
-</section>
-
-<footer>
-  świat Mileny • wersja 1
-</footer>
+<div class="hint">⬇ scrolluj dalej</div>
 
 </body>
 </html>
