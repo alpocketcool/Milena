@@ -1,30 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Świat Mileny</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7ff;
+      color: #222;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ffde59, #ff7bd1);
+      padding: 25px;
+      color: black;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      margin: 15px auto;
+      padding: 15px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #eee;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>🎨 Świat Mileny</h1>
-    <p>tu są kolory, historie i muzyka</p>
-  </header>
+<header>
+  <h1>🎨 Świat Mileny</h1>
+  <p>kolory • zwierzęta • wyobraźnia • muzyka</p>
+</header>
 
-  <section>
-    <h2>Galeria</h2>
-    <img src="assets/rysunki/rysunek1.jpg" width="300">
-  </section>
+<section>
 
-  <section>
-    <h2>Piosenka</h2>
+  <div class="card">
+    <h2>🖼️ Mój rysunek</h2>
+    <img src="assets/rysunki/rysunek1.jpg" alt="rysunek Mileny">
+    <div class="tag">to jest mój kot co lata</div>
+  </div>
+
+  <div class="card">
+    <h2>🎧 Moja piosenka</h2>
     <audio controls>
       <source src="assets/audio/utwor1.mp3" type="audio/mpeg">
     </audio>
-  </section>
+    <div class="tag">to mnie rozśmiesza</div>
+  </div>
+
+  <div class="card">
+    <h2>📖 Historia</h2>
+    <p>
+      Tu są moje kolory i zwierzęta.  
+      Pikachu czasem mi pomaga rysować świat.
+    </p>
+    <div class="tag">moja opowieść</div>
+  </div>
+
+</section>
+
+<footer>
+  świat Mileny • wersja 1
+</footer>
 
 </body>
 </html>
